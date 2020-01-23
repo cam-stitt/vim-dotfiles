@@ -1,7 +1,7 @@
 " pathogen
 execute pathogen#infect()
 
-let s:uname = system("uname")
+let s:uname = substitute(system("uname"), '\n', '', '')
 
 " appearance
 syntax on
